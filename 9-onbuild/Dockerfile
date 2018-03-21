@@ -18,6 +18,5 @@ RUN wget -q -O /usr/local/bin/waitforit https://github.com/maxcnunes/waitforit/r
 WORKDIR /usr/src/app
 ONBUILD COPY src/ /usr/src/app
 
-RUN addgroup -S group && adduser -S -G group user
-USER user
+USER node
 CMD ["/opt/run.sh"]
