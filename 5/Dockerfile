@@ -18,5 +18,4 @@ COPY --from=waitforit /go/bin/waitforit /usr/local/bin/waitforit
 
 WORKDIR /usr/src/app
 
-USER node
 CMD ["/opt/run.sh"]
